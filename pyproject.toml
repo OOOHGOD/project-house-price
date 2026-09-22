@@ -1,0 +1,47 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "project-house-price"
+version = "1.0.0"
+description = "A reproducible decision-tree baseline for the Boston housing dataset."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "joblib>=1.3,<2",
+  "matplotlib>=3.8,<4",
+  "numpy>=1.26,<3",
+  "pandas>=2.1,<3",
+  "scikit-learn>=1.4,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<9",
+  "ruff>=0.6,<1",
+]
+notebook = [
+  "graphviz>=0.20,<1",
+  "jupyterlab>=4,<5",
+  "mlxtend>=0.23,<1",
+  "pydotplus>=2,<3",
+]
+
+[project.scripts]
+house-price = "house_price.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/house_price"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+extend-exclude = ["*.ipynb"]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
