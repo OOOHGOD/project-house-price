@@ -1,6 +1,41 @@
-[English](README.md) | **简体中文**
+<div align="center">
 
-# Boston 房价预测：决策树回归
+# Boston 房价预测
+
+从训练、评估到预测的可复现 Decision Tree 实验。
+
+[English](README.md) · **简体中文**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square) ![scikit-learn](https://img.shields.io/badge/scikit--learn-334155?style=flat-square) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square) [![MIT License](https://img.shields.io/badge/License-MIT-2563EB?style=flat-square)](LICENSE)
+
+</div>
+
+<p align="center">
+<a href="#项目概览">项目概览</a> · <a href="#环境要求">环境要求</a> · <a href="#作者与许可">作者与许可</a>
+</p>
+
+---
+
+> **项目定位** · 数据分析与 Machine Learning
+
+
+<details>
+<summary>展开完整目录</summary>
+
+- [项目概览](#项目概览)
+- [项目能力](#项目能力)
+- [项目结构](#项目结构)
+- [环境要求](#环境要求)
+- [快速开始](#快速开始)
+- [数据字段](#数据字段)
+- [开发与验证](#开发与验证)
+- [原始实验材料](#原始实验材料)
+- [已知限制](#已知限制)
+- [作者与许可](#作者与许可)
+
+</details>
+
+## 项目概览
 
 这是一个基于 Boston Housing 数据集的决策树回归项目。仓库在保留原始课程实验 Notebook 和文档的基础上，补充了可复现的 Python 工程、命令行训练/预测入口、自动剪枝调参、模型评估、可视化产物与测试。
 
@@ -167,10 +202,8 @@ uv run ruff check src tests
 - 单棵决策树容易产生较高方差；本项目使用剪枝缓解该问题，但不代表最佳预测效果。
 - Boston Housing 数据集包含一个有争议的人口统计派生特征，且数据年代较早。展示结果时应说明数据背景，避免把它作为公平、现代的住房估值基准。
 
+## 作者与许可
 
+作者 / 维护者：[OOOHGOD](https://github.com/OOOHGOD) · 原创贡献：[MIT License](LICENSE)
 
-## 作者与许可证
-
-作者/维护者：[https://github.com/OOOHGOD](https://github.com/OOOHGOD)。
-
-原创贡献采用 [MIT 许可证](LICENSE)，允许商用和修改；分发软件副本或实质部分时须保留版权与许可声明。第三方代码、数据、模型和媒体素材保留各自权利，详见 [LICENSE_SCOPE.md](LICENSE_SCOPE.md)。
+允许商用和修改；分发软件副本或实质部分时，须保留版权与许可声明。第三方代码、数据、模型和媒体素材保留各自权利，详见 [许可适用范围](LICENSE_SCOPE.md)。

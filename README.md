@@ -1,11 +1,42 @@
-**English** | [简体中文](README.zh-CN.md)
+<div align="center">
 
-# Boston Housing: Decision-Tree Regression
+# Boston Housing Regression
+
+A reproducible Decision Tree baseline, from training to prediction.
+
+**English** · [简体中文](README.zh-CN.md)
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square) ![scikit-learn](https://img.shields.io/badge/scikit--learn-334155?style=flat-square) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square) [![MIT License](https://img.shields.io/badge/License-MIT-2563EB?style=flat-square)](LICENSE)
+
+</div>
+
+<p align="center">
+<a href="#overview">Overview</a> · <a href="#install">Install</a> · <a href="#repository-guide">Repository guide</a> · <a href="#author--license">Author &amp; License</a>
+</p>
+
+---
+
+> **Project focus** · Machine Learning
+
+
+<details>
+<summary>Full contents</summary>
+
+- [Overview](#overview)
+- [Features](#features)
+- [Install](#install)
+- [Train and evaluate](#train-and-evaluate)
+- [Batch prediction](#batch-prediction)
+- [Repository guide](#repository-guide)
+- [Development and limitations](#development-and-limitations)
+- [Author & License](#author--license)
+
+</details>
+
+## Overview
 
 A reproducible decision-tree regression baseline with a Python package, training/prediction CLI, cross-validation, cost-complexity pruning, and saved evaluation artifacts. Original decision-tree and Iris experiment notebooks are retained.
 
-**Category:** Data Analysis · Machine Learning  
-**Stack:** Python 3.10+ · pandas · scikit-learn · Matplotlib · joblib
 
 ## Features
 
@@ -65,8 +96,8 @@ ruff check src tests
 
 The small historical dataset is intended for teaching and baseline experiments, not present-day valuation. It includes a controversial demographic-derived feature. Pruning does not resolve its age, representativeness, or fairness limitations. No new benchmark results are claimed here.
 
-## Author and license
+## Author & License
 
-Author / maintainer: [https://github.com/OOOHGOD](https://github.com/OOOHGOD).
+Author / maintainer: [OOOHGOD](https://github.com/OOOHGOD) · Original contributions: [MIT License](LICENSE)
 
-Eligible original contributions are under the [MIT License](LICENSE), permitting commercial use and modification with preservation of copyright and license notices in copies or substantial portions. [License scope](LICENSE_SCOPE.md) explains third-party exclusions and upstream terms.
+Commercial use and modification are permitted with preservation of copyright and license notices in copies or substantial portions. Third-party code, datasets, models, and media retain their own terms; see [license scope](LICENSE_SCOPE.md).
